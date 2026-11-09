@@ -1,0 +1,9 @@
+{
+    "name": "synapse/synapse",
+    "description": "Campus peer tutoring system",
+    "type": "project",
+    "require": {
+        "php": ">=8.1",
+        "phpmailer/phpmailer": "^6.9"
+    }
+}

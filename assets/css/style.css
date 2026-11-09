@@ -1,0 +1,51 @@
+:root {
+    --bs-primary: #333;
+    --bs-primary-rgb: 51, 51, 51;
+    --synapse-primary: #333;
+    --synapse-dark: #111;
+}
+body { background: #fff; color: #202124; }
+.bg-synapse { background: #fff; }
+.text-synapse, .text-primary { color: #333 !important; }
+.btn-synapse, .btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #333;
+    --bs-btn-border-color: #333;
+    --bs-btn-hover-bg: #111;
+    --bs-btn-hover-border-color: #111;
+    --bs-btn-active-bg: #111;
+    --bs-btn-active-border-color: #111;
+}
+.btn-outline-primary {
+    --bs-btn-color: #333;
+    --bs-btn-border-color: #777;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #333;
+    --bs-btn-hover-border-color: #333;
+}
+.navbar-brand { letter-spacing: .01em; }
+.navbar .nav-link.active { color: #111; font-weight: 600; }
+.card { border: 1px solid #d5d5d5; border-radius: .4rem; box-shadow: none; }
+.page-heading { font-weight: 700; }
+.stat-number { font-size: 2rem; font-weight: 700; }
+.hero { background: linear-gradient(135deg, #333, #555); }
+.workflow li { padding: .8rem 0; border-bottom: 1px solid rgba(255,255,255,.25); }
+.workflow li:last-child { border-bottom: 0; }
+.workflow i { font-size: 1.2rem; margin-right: .35rem; }
+.admin-dashboard { width: 100%; max-width: 1250px; margin: .65rem auto 2rem; }
+.dashboard-eyebrow { color: #555; font-size: .85rem; font-weight: 600; letter-spacing: .02em; }
+.dashboard-title { color: #161616; font-size: 2rem; font-weight: 400; line-height: 1.2; }
+.dashboard-section { margin-top: 1.55rem; }
+.dashboard-section:first-of-type { margin-top: 0; }
+.dashboard-section-title { color: #222; font-size: 1.15rem; font-weight: 400; margin-bottom: .8rem; }
+.overview-card { border: 1px solid #d2d2d2; border-radius: .4rem; box-shadow: none; }
+.overview-card .card-body { padding: 1rem; }
+.overview-label { color: #555; font-size: .85rem; }
+.overview-number { color: #111; font-size: 2.25rem; font-weight: 400; line-height: 1.2; margin-top: .3rem; }
+.dashboard-logout { min-width: 106px; }
+.table thead th { color: #555; font-size: .82rem; text-transform: uppercase; letter-spacing: .04em; }
+@media print {
+    nav, footer, .no-print, button, form { display: none !important; }
+    body { background: #fff; }
+    .card, .overview-card { box-shadow: none; border: 1px solid #bbb; }
+}

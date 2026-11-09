@@ -1,0 +1,6 @@
+<FilesMatch "\.sql$">
+    Require all denied
+</FilesMatch>
+<Files ".env">
+    Require all denied
+</Files>
